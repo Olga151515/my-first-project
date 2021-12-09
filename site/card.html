@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Irish+Grover&family=Merriweather:ital,wght@0,300;0,900;1,300;1,400;1,700;1,900&family=Mochiy+Pop+One&family=Mochiy+Pop+P+One&family=Poppins:ital,wght@1,900&display=swap" rel="stylesheet">
+
+    <style>
+*
+        {margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: font-family: 'Poppins', sans-serif;}
+
+    body {display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;}
+
+        .card 
+            {width: 250px;
+            height: 250px;
+            margin: 2em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            position: relative;
+            cursor: pointer;
+            transition: all .4s;
+}
+
+                .card:hover {color: white;}
+
+            .card::before, .card::after {
+                content: ""; position: absolute;
+                top: 0; left: 0;
+                width: 100%; height: 100%;
+                background: rgb(243, 243, 243);
+                z-index: -1; border-radius: 10px;
+                transition: all .4s;
+            }
+
+            .card::after {
+                background: #f8485e;
+                transform-origin: right bottom;
+                transform: translate3d(10%, 10%) scale(0.3);
+                border-radius: 50%; transition: all .4s;
+            }
+
+            .card:hover::after {
+                transform: translate(0) scale(1);
+                border-radius: 0;
+                border-radius: 10px;
+            }
+            .card:hover::before {
+                transform-origin: right bottom;
+                transform: translate(10%, 10%) scale(0.3);
+                border-radius: 50%; z-index: 1;
+            }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Card</h1>
+        <p>1</p>
+    </div>
+
+    <div class="card">
+            <h1>Card</h1>
+            <p>2</p>
+    </div>
+
+    <div class="card">
+                <h1>Card</h1>
+                <p>3</p>
+
+    </div>
+</body>
+</html>

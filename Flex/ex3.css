@@ -1,0 +1,48 @@
+:root {font-family: 'Mochiy Pop P One', sans-serif;
+font-size: 16px;
+
+}
+*{box-sizing: border-box;
+    margin: 0;}
+
+.header {min-height: 100vh;
+
+display: flex;
+background: mediumblue;
+background-image: url(/images/251559.jpg);
+background-position: center;
+background-size: cover;
+background-attachment: fixed;
+color: beige;
+justify-content: space-between;
+align-items: center;
+flex-direction: column;
+padding: 1rem;
+
+}
+.header-text 
+{flex-grow: 1;
+display: flex;
+align-items: center;}
+
+
+.header h1  
+{font-size:10vw ;
+    text-align: center;
+    font-weight: 800;
+}
+
+.call.to.action {background-color: rgb(163, 204, 228);
+text-decoration: none;
+display: inline-block;
+font-size: 1.5rem;
+font-weight: 500;
+padding: 1rem 1.5rem;
+border-radius: 999px;
+box-shadow: rgb(239, 244, 245) 5px 5px 33px;
+display: flex;
+align-items: center;
+gap: 1rem;
+}
+
+.call.to.action i {font-size: 2rem;}

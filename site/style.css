@@ -1,0 +1,94 @@
+:root 
+    { font-family: 'Merriweather', serif;
+    font-size: 16px;
+    font-weight: 700;}
+
+    *{box-sizing: border-box;
+    margin: 0;}
+
+    body 
+            {background-color:rgb(254, 197, 187);
+            color: rgb(56, 51, 80);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+    .container {
+        max-width: 1400px;
+        margin: 0 auto;
+    
+}
+
+     
+
+    .header-content 
+        {
+        display: flex;
+        justify-content: space-around;}
+
+    .header-content a {text-decoration: none;
+        color: rgb(12, 12, 11);}
+
+    .logo 
+        {font-size: 1.5rem;
+        display: flex;
+        align-items: center;
+        column-gap: .5rem;
+    }
+
+    .logo .fas
+         {font-size: 2rem;}
+
+
+    .header 
+            {background: #F8EDEB;
+            padding: .5rem;}
+
+    .main-menu 
+        {display: flex;
+        column-gap: .25rem;
+        align-items: center;
+        font-size: 1.1rem;
+        font-style: oblique;}
+
+    .main-menu a 
+        {display: flex;
+        align-items: center;
+        column-gap: .25rem;
+        padding: 1rem 1.25rem;
+        border-radius: .3rem;
+        transition: 1s ease;
+        }
+
+
+    .main-menu a:hover, 
+    .main-menu a.active
+        {background: rgba(0, 0, 0, 0.4);}
+
+
+    .main 
+        {background: rgb(170, 179, 154);
+        margin: .5rem auto;
+        padding: 1rem;
+        box-shadow: rgba(238, 130, 238, 0.363) 2px 6px;
+        flex-grow: 1;
+        font-style: oblique;
+}
+
+    .footer 
+        {background: rgb(75, 66, 66);
+        color: thistle;
+        padding: 2rem;}
+        
+         .tel {padding: 3rem;
+        font-size: 20px;
+        margin: 2rem auto;
+        align-self: flex-end;
+        color: brown;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    
+        }
+      

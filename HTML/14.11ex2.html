@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .block 
+            {width: 400px;
+            padding: 2rem;
+            background: rgb(64, 183, 192);}
+
+        .block h2:hover~p 
+            {opacity: 1;
+            font-size: 2rem;
+        } 
+
+        .block p 
+            {opacity: .2;
+           transition:.5s ease;}
+
+        .block h4 {
+            visibility: hidden;
+            /* display: none; */}
+
+           .block button 
+                {cursor:pointer;
+                padding: .5rem 1.5rem;
+                font-size: 1.5rem;}
+
+    </style>
+</head>
+<body>
+    
+    <div class="block">
+        <button>Hover me</button>
+        <h2>Hover me</h2>
+        <h4>hello</h4>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quibusdam voluptas voluptatibus iusto veritatis amet et, a earum praesentium enim facere rem recusandae est. Quod esse sit nihil ab ea.
+
+        </p>
+    </div>
+</body>
+</html>

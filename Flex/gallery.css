@@ -1,0 +1,41 @@
+:root {font-family: 'Mochiy Pop P One', sans-serif;
+    font-size: 16px;}
+
+    *{box-sizing: border-box;
+        margin: 0;}
+
+        body {background: wheat;
+        padding-top: 1rem;
+    }
+
+        .container 
+        {max-width: 1600px;
+        margin: 0 auto;
+        background: whitesmoke;
+        box-shadow: rgba(0,0,0,0.2) 0 6px 8px;
+         padding: 1rem;
+         border-radius: 0.5rem;
+         display: flex;
+         flex-wrap: wrap;
+         gap: 1rem;
+    }
+
+        .container .item {
+        background: rgb(124, 140, 153);
+        color: white;
+        padding: 2rem;
+        font-size: 3rem;
+        width: 17%;
+        flex-grow: 1;
+        min-height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 200px;
+    }
+.item:hover {background: blue;
+transition: 1.5s ease;}
+
+        i {color: rgb(196, 236, 17);}
+
+        i:hover{color: black;}

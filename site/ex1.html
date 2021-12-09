@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+        * {
+            box-sizing: border-box;
+        }
+        .container {
+            max-width: 800px;
+            height: 300px;
+            margin: 2rem auto;
+            padding: 1rem;
+            background: #472c74;
+
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            /* align-content: flex-start; */
+            gap: 1rem;
+        }
+        .item {
+            color: #fff;
+            background: #df7f31;
+            padding: 1rem;
+        }
+        .item.red {
+            background: rgb(216, 24, 40);
+            flex-grow: 2;
+            align-self: stretch;
+            opacity: .2;
+        }
+
+        .item.red:hover {opacity: 1;
+            transition:.5s ease;}
+
+        .item.green {
+            background: rgb(16, 187, 53);
+            flex-grow: 1;
+            transform: skew(-15deg) scale(1) translate(25px,100px);
+            opacity: 1;
+     }
+     .item.green:hover {color: rgb(10, 10, 9);
+    transition: .5 ease;
+    background: coral;}
+
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="item green">
+            Item 1
+        </div>
+        <div class="item red">
+            Item 22222222222
+        </div>
+    </div>
+
+</body>
+</html>

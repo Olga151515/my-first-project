@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./icomoon/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="container header-content">
+            <a href="#" class="logo">
+                <img src="./images/logo.svg" alt="Miguel UI">
+            </a>
+            <div class="menu ">
+                <a href="#">Home</a>
+                <a href="#">About Me</a>
+                <a href="#">Projects</a>
+                <a href="#">Contact</a>
+            </div>
+            <button class="menu-burger">
+                <i class="icon-burger"></i>
+                <i class="icon-close"></i>
+            </button>
+        </div>
+        <div class="separator"></div>
+    </div>
+
+    <script>
+        const burger = document.querySelector('.menu-burger')
+        const menu = document.querySelector('.menu')
+        burger.addEventListener('click', () => {
+            burger.classList.toggle('open')
+            menu.classList.toggle('open')
+        })
+    </script>
+
+</body>
+
+</html>
