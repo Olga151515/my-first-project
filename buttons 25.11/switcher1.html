@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <title>Document</title>
+</head>
+
+<style>
+
+.switcher {
+        padding: .5rem;
+        display: block;
+        width: 3rem;
+        height: 2rem;
+        position: relative;
+        cursor: pointer;
+    }
+
+   
+    .switcher > input {
+        display: none;
+    }
+
+    .switcher > input + .switcher-bg {
+        background-color: rgb(31, 200, 230);
+        border-radius: 50px;
+        border: 2px ridge black;
+        transition: .3s ease;
+
+    }
+        
+    
+i {
+    transform: translate(2px, 1px);
+}
+
+i:hover {color: yellow;
+    transition: .3s ease;
+
+}
+
+    .switcher > input:checked + .switcher-bg {
+       background: rgb(250, 6, 6);
+       border: 2px double rgb(7, 10, 10);
+
+
+    }
+
+    .switcher > input:checked + .switcher-bg > .switcher-toggler {
+        
+        transform: translate(1.5rem);
+        transition: .3s ease;
+      
+      
+    }
+
+    
+</style>
+<body>
+    
+    <label class="switcher">
+
+        <input type="checkbox">
+        <div class="switcher-bg">
+            <div class="switcher-toggler">
+                <i class="fas fa-heart"></i>
+            </div>
+        </div>
+    </label>
+</body>
+</html>

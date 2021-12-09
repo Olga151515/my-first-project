@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+
+.switcher {
+    display: block;
+    width: 4rem;
+    height: 2rem;
+    background-color: yellow;
+    border:2px double rgb(15, 12, 4);
+    border-radius: 9px;
+    cursor: pointer;
+    position: relative;
+
+}
+
+.switcher > input {
+    display: none;
+}
+
+.switcher > input + .switcher-bg {
+    background: rgb(228, 125, 197);
+    width: 97%;
+    height: 93%;
+    border-radius: .46rem;
+    transition: .3s ease;
+    border: 1px solid rgb(160, 80, 124);
+    text-align: right;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    font-size: .5rem;
+    position: relative;
+   
+}
+
+
+.switcher > input + .switcher-bg > .switcher-toggler {
+    background-color: rgb(231, 253, 30);
+    height: 1.87rem;
+    width: 1.5rem;
+    border-radius: .45rem;
+    transition: .3s ease;
+    box-shadow: rgba(240, 26, 176, 0.911)2px -.5px 3px;
+    position: absolute;
+   left: 0;
+
+}
+.switcher > input:checked + .switcher-bg {
+    background-color: rgb(17, 36, 94);
+    border: 1px solid rgb(113, 96, 177);
+    text-align: start;
+    /* color: transparent; */
+    
+}
+
+.switcher > input:checked + .switcher-bg > .switcher-toggler {
+    background-color: skyblue;
+    transform: translate(38px);
+    box-shadow: rgba(176, 139, 235, 0.795)-1px -2px 8px;
+    text-align: start;
+   
+}
+
+   
+</style>
+<body>
+    
+<label class="switcher">
+    <input type="checkbox">
+    <div class="switcher-bg">
+        <span class="text">LOVE</span>
+        <span class="text text-hate">HATE</span>
+        <div class="switcher-toggler"></div>
+    </div>
+</label>
+
+</body>
+</html>

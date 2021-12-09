@@ -1,0 +1,267 @@
+:root {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 500;}
+
+*{
+    box-sizing: border-box;
+    margin: 0;}
+
+body {
+    background: rgb(211, 195, 175);
+    color: black;
+    position: relative;
+
+}
+
+
+a.active {background: rgb(22, 47, 94);}
+
+.header {
+    padding: 1rem;
+    background-color: black;
+    color: whitesmoke;
+    position: sticky;
+    top: 0;
+}
+
+.header a{
+    color: bisque;
+    text-decoration: none;
+}
+
+.header ul {
+        padding: 0;
+        list-style: none;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    display: flex;
+    column-gap: 1rem;
+    align-items: center;
+    font-size: 1.3rem;
+    font-weight: 700;
+
+}
+
+.menu  {
+    display: flex;
+    gap: .5rem;
+    font-size: 1.1rem;
+    
+}
+
+.menu a {
+    display: flex;
+    padding:.5rem 1rem;
+    align-items: center;
+    column-gap: .3rem;
+    transition: background .5s ease;
+    white-space: nowrap;
+}
+
+.menu li:hover > a{
+    background: rgb(22, 47, 94);
+    border-radius: 5px;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu li > ul {
+    position: absolute;
+    background: black;
+    /* padding: .5rem 0; */
+    box-shadow: rgba(0, 0, 0, 0.137) 0 2px 5px;
+    opacity:0;
+    transition: .5s ease;
+    transform: scaleY(0.5);
+    transform-origin: 0 0;
+}
+
+.menu li ul {
+    position: absolute;
+    background: black;
+    padding: .5rem 0;
+    border-radius: 10px;
+}
+
+.menu li:hover > ul {
+    display: block;
+    opacity: 1;
+    transform: scaleY(1) translateY(0);
+}
+
+
+
+.menu li ul ul {
+  top: -.5rem;
+  left: 100%;
+  transform: scaleX(0.2);
+transform-origin: 0 0;
+}
+
+
+.products {
+    max-width: 1600px;
+    padding: 1rem;
+    margin: auto;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem 1rem;
+}
+
+.product-card {
+    background: white;
+    padding: .5rem;
+    box-shadow: rgba(0, 0, 0, 0.226)0 2px 6px;
+    width: 100%;
+    border-radius: .7;
+   
+}
+
+.product-card-link {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    text-decoration: none;
+    margin-bottom: 1rem;
+    
+}
+.product-card-link img {
+    height: 320px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: .5rem;
+
+}
+
+.product-card-link h3 {
+    color:rgb(219, 82, 82);
+    font-size: 1.33rem;
+    font-weight: 600;
+}
+
+.product-card-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: .5rem;
+}
+
+.product-card-info > h5 {
+    font-weight: 700;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.product-card-info > h5 >.old-price {
+font-size: 1rem;
+font-weight: 500;
+text-decoration: line-through;
+text-decoration-color: red;
+text-decoration-thickness: .25rem;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    padding: .5rem;
+    justify-content: center;
+    background: rgb(70, 66, 66);
+    color: honeydew;
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 1rem;
+    border: 0;
+    border-radius: .25rem;
+    column-gap: .5rem;
+    cursor: pointer;
+    transition: .3s ease;
+    
+}
+
+.btn-wishlist {
+    background: red;
+}
+
+.btn-wishlist:hover {
+    background: tomato;
+}
+.btn-add-to-cart{
+    background: teal;
+    padding: .5rem 2rem ;
+}
+
+.btn-add-to-cart:hover {
+    background: turquoise;
+}
+
+
+
+footer {
+    background: #0d0e0d;
+    padding: 1rem;
+    margin: auto;
+    font-size: 1.2rem;
+    font-weight: 700;
+    
+}
+    .footer-block {
+        display: flex;
+        justify-content: space-between;
+        color: blanchedalmond;
+    }
+
+.rights-reserved {
+    font-size: .7rem;
+    padding-left: 2.3rem;
+    color: blanchedalmond;
+}
+.footer-contacts a{
+    font-size: 1rem;
+    color: rgb(252, 252, 252);
+    padding: .5rem;
+
+}
+
+.footer-contacts a:hover {
+    background: #273d3f;
+    transition: .5s ease;
+    border-radius: .5rem;
+    padding: .5rem;
+}
+
+
+@media screen and (min-width:576px) {
+    .product-card {
+        max-width: calc(50% - .5rem);
+    }
+    
+}
+
+@media screen and (min-width:1024px) {
+    .product-card {
+        max-width: calc(33% - .6rem);
+    }
+    
+}
+@media screen and (min-width:1250px) {
+    .product-card {
+        max-width: calc(25% - .75rem);
+    }
+    
+}

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="forms.css">
+    <title>Document</title>
+</head>
+<style>
+:root {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+
+body {
+    background: cornsilk;
+    margin: 0 auto;
+}
+form {
+    background-color: rgb(135, 195, 222);
+    padding-bottom: 1rem;
+}
+
+
+/* button {
+ --glow-color: rgb(217, 176, 255);
+ --glow-spread-color: rgba(191, 123, 255, 0.781);
+ --enhanced-glow-color: rgb(231, 206, 255);
+ --btn-color: rgb(100, 61, 136);
+ outline: none;
+ border: .25em solid var(--glow-color);
+ padding: 1em 3em;
+ color: var(--glow-color);
+ font-size: 15px;
+ font-weight: bold;
+ background-color: var(--btn-color);
+ border-radius: 1em;
+ outline: none;
+ box-shadow: 0 0 1em .25em var(--glow-color),
+        0 0 4em 1em var(--glow-spread-color),
+        inset 0 0 .75em .25em var(--glow-color);
+ text-shadow: 0 0 .5em var(--glow-color);
+ position: relative;
+ transition: all 0.3s;
+ cursor: pointer;
+}
+
+button::after {
+ pointer-events: none;
+ content: "";
+ position: absolute;
+ top: 120%;
+ left: 0;
+ height: 100%;
+ width: 100%;
+ background-color: var(--glow-spread-color);
+ filter: blur(2em);
+ opacity: .7;
+ transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+ cursor: pointer;
+}
+
+button:hover {
+ color: var(--btn-color);
+ background-color: var(--glow-color);
+ box-shadow: 0 0 1em .25em var(--glow-color),
+        0 0 4em 2em var(--glow-spread-color),
+        inset 0 0 .75em .25em var(--glow-color);
+}
+
+button:active {
+ box-shadow: 0 0 0.6em .25em var(--glow-color),
+        0 0 2.5em 2em var(--glow-spread-color),
+        inset 0 0 .5em .25em var(--glow-color);
+} */
+button {
+font-size: 1rem;
+font-family: inherit;
+background: linear-gradient(45deg, rgb(234, 229, 235) 32%, rgb(104, 196, 199), rgb(245, 247, 154) 96%);;
+border-radius: 1rem;
+box-shadow:-5px -5px 22px -5px rgba(215, 29, 217, 0.6) inset ;
+color: rgb(55, 0, 255);
+padding: .5rem;
+transition: all .3s ease;
+cursor: pointer;
+margin: 0 1rem;
+border-color: mediumblue;
+
+}
+
+button:hover {
+    background:  #fed6e3;
+    box-shadow: rgba(0, 250, 154, 0.363) 0 3px 6px;
+} 
+ input  {
+    /* height:.5rem; */
+    /* width: 200px; */
+    padding: 1rem;
+    /* margin: 1rem; */
+    border:4px solid rgb(0, 204, 255);
+    transition: .5s ease;
+}
+ /* input:focus {
+    border: orchid;
+    outline: none;
+   
+} */
+input:hover {
+    border:4px dotted rgb(82, 82, 228);
+    border-style: ridge;
+    padding: .5rem;
+    /* width: calc(200px+4rem); */
+    /* height: 1.5rem; */
+    box-shadow: rgba(76, 0, 130, 0.342) 0 2px 4px;} */
+
+ .container-button {
+    margin: 1rem; 
+}
+button:disabled {
+    opacity:.5;
+    pointer-events: none;
+    
+}
+
+button:focus {
+    border: 1px solid red;
+    outline: none;
+
+}
+ 
+ input[type="checkbox"]{
+     color: darkorange;
+ }
+
+ 
+
+ textarea {
+     resize: none;
+ }
+</style>
+
+
+<body>
+    
+
+    <form>
+        <h3>Forms</h3>
+<input type="text" placeholder="write down">
+       <input type="text" required maxlength="3" value="read only" readonly>
+              
+                <button type="reset"> Reset</button>
+                <button disabled> Submit</button>
+                <button type="button"> Button</button>
+                <input type="range">
+        
+    </form>
+<br>
+    <form>
+        <input type="search" class="more">
+        <form>
+        <input type="radio" class="more"> hello
+        <input type="radio" class="more"> hello
+        <input type="radio" class="more"> hello
+    </form>
+    <hr>
+</form>
+    <form>
+        Select
+        <input type="file">
+        
+        <label>
+        <span>CHECKBOX</span>
+        <input type="checkbox" checked>hi
+        <input type="checkbox">hi
+    </label>
+        <input type="text" >
+        
+       
+        <hr>
+    </form>
+
+    <form>
+        <label>
+            choose
+            <input type="checkbox">
+        </label>
+        <hr>
+        choose
+        <select multiple>
+        <optgroup label="DPR">
+    
+            <option>Makeevka</option>
+            <option selected>Donetsk</option>
+            <option>Gorlovka</option>
+        </optgroup>
+        <optgroup label="LPR">
+            <option>Lugansk</option>
+            <option>Alchevsk</option>
+        </optgroup>
+
+        </select>
+        <textarea placeholder="write here" cols="50" rows="5"></textarea>
+    </form>
+
+</body>
+</html>
